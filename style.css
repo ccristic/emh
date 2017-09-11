@@ -1,0 +1,72 @@
+body {
+  background-image: url("bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: 'Ubuntu', sans-serif;
+}
+
+@font-face {
+    font-family: 'Glyphter';
+    src: url('fonts/Glyphter.eot');
+    src: url('fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Glyphter.woff') format('woff'),
+         url('fonts/Glyphter.ttf') format('truetype'),
+         url('fonts/Glyphter.svg#Glyphter') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class*='icon-']:before{
+	display: inline-block;
+   font-family: 'Glyphter';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+.icon-loading:before{content:'\0041';}
+
+#timer {
+  font-family: 'Aclonica', sans-serif;
+  font-size: 160px;
+  color: #493400;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rgba(73, 52, 0, 0.3);
+  border-radius: 200px;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #493400;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #493400;
+  color: #feac00;
+}
+
+#refresh {
+  font-family: 'Glyphter';
+  font-size: 25px;
+  padding: 12px 13px;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  grid-template-rows: 1fr 480px 1fr;
+}
+
+.timer {
+  grid-column: 2;
+  grid-row: 2;
+}
